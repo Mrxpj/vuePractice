@@ -31,6 +31,16 @@ const routes = [
     name: 'echarts',
     component: () => import(/* webpackChunkName: "about" */ '../views/echarts.vue')
   },
+  {
+    path: '/busA',
+    name: 'busA',
+    component: () => import(/* webpackChunkName: "about" */ '../views/EvenBus/busA.vue')
+  },
+  {
+    path: '/busB',
+    name: 'busB',
+    component: () => import(/* webpackChunkName: "about" */ '../views/EvenBus/busA.vue')
+  },
 ]
 
 const router = new VueRouter({
